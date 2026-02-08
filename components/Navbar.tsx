@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import Hover from "./Hover";
+import { useRouter } from "next/navigation";
 
 type Props = {
   menuOpen: boolean;
@@ -11,9 +12,10 @@ type Props = {
 };
 
 const Navbar = () => {
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="relative w-full h-24 flex items-center justify-between px-6 bg-white text-black lg:px-12 md:px-12 z-50">
+    <nav className="fixed w-full h-24 flex items-center justify-between px-6 bg-white text-black lg:px-12 md:px-12 z-50 ">
       {/* Logo */}
       <Image
         src="/icons/logo.svg"
@@ -21,6 +23,7 @@ const Navbar = () => {
         width={120}
         height={25}
         className="cursor-pointer"
+        onClick={() => router.push("/")}
       />
 
       {/* Desktop Menu */}
