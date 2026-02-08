@@ -28,7 +28,7 @@ const Home = () => {
               className="absolute right-5 bottom-0 mt-4 animate-spin [animation-duration:8s] z-0 cursor-pointer"
             />
           </div>
-          <div className="flex flex-col gap-6 items-center justify-center  lg:max-w-[620px] lg:items-start lg:pt-20 lg:justify-evenly">
+          <div className="flex flex-col gap-6 items-center justify-center lg:max-w-[620px] lg:items-start lg:pt-20 lg:justify-evenly">
             <div className="flex flex-row gap-2 items-center pl-3 lg:pl-0">
               <Image
                 width={220}

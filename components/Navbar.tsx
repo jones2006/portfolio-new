@@ -61,7 +61,7 @@ const Navbar = () => {
           <Link
             href="/"
             onClick={() => setMenuOpen(false)}
-            className="ibm font-bold "
+            className="ibm font-bold"
           >
             Home
           </Link>
