@@ -11,7 +11,7 @@ const About = () => {
           <Image
             width={130}
             height={130}
-            src="/icons/About.png"
+            src="/icons/about.png"
             alt="no image"
             className="pt-6 lg:w-64 lg:h-28 lg:mt-3"
           />
