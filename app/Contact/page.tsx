@@ -65,7 +65,7 @@ const Contact = () => {
             className="lg:w-44 lg:h-16"
           />
           <button
-            className="rounded-full w-14 h-14 bg-[#8FA9EB] border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20"
+            className="rounded-full w-14 h-14 bg-[#A459FF] border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20"
             onClick={() => router.push("/Projects")}
           >
             <ArrowUpRight
