@@ -1,12 +1,23 @@
+"use client";
 import Navbar from "@/components/Navbar";
+import Profile from "@/components/profile";
+import Whattodo from "@/components/Whattodo";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useRef } from "react";
+import { ArrowUp } from "react-feather";
 
 const About = () => {
+  const scrollref = useRef<HTMLDivElement | null>(null);
+  const router = useRouter();
   return (
     <div className="w-full min-h-screen bg-white">
       <Navbar />
       {/* hero section */}
-      <section className="w-full flex flex-col items-center justify-center gap-8 pb-5 pt-28">
+      <section
+        className="w-full flex flex-col items-center justify-center gap-8 pb-5 pt-28"
+        ref={scrollref}
+      >
         <div className="w-[90%]  border-[6px] border-black bg-[#F2C65E] rounded-[3rem] flex flex-col gap-1 justify-center items-center pb-6 lg">
           <Image
             width={130}
@@ -20,80 +31,40 @@ const About = () => {
             <span className="text-[#5F4FE6]">DEVELOPER</span> BY PRACTICE”
           </p>
           {/* profile */}
-          <div className="flex flex-col items-center justify-center gap-3 lg:flex-row-reverse">
-            <div className="relative bottom-4">
-              <Image
-                width={520}
-                height={520}
-                src="/icons/profile.png"
-                alt="no image"
-                className=""
-              />
-              <Image
-                width={100}
-                height={100}
-                src="/icons/circle.png"
-                alt="no image"
-                className="absolute right-5 bottom-0 mt-4 animate-spin [animation-duration:8s] z-0 cursor-pointer"
-              />
-            </div>
-            {/* content */}
-            <div className="lg:flex-col lg:w-[50%] flex flex-col gap-3 items-center justify-center">
-              <div className="bg-[#DECDFE] p-2 border-black w-[96%] border-4 border-b-8 rounded-2xl flex flex-col items-center justify-center text-black lg:w-[80%] lg:items-start lg:border-b-[12px] lg:gap-2 lg:h-48 md:items-start ">
-                <p className="text-left space font-bold text-black text-[0.85rem] px-2 py-2 lg:text-2xl lg:px-10 md:text-2xl md:px-10 md:py-6">
-                  Hi, I’m Jones — a{" "}
-                  <span className="text-[#5F4FE6]">UI/UX Designer</span> and{" "}
-                  {""}
-                  <span className="text-[#F14E1E]">App Developer</span>
-                  {""} who loves building bold, functional, and user-focused
-                  digital products.
-                </p>
-              </div>
-
-              <div className="bg-[#23A095] p-2 border-black w-[96%] border-4 border-b-8 rounded-2xl flex flex-col items-center justify-center text-black lg:w-[80%] lg:items-start lg:border-b-[12px] lg:gap-2 lg:h-48 md:items-start">
-                <p className="text-left space font-bold text-black text-sm px-2 py-2 lg:text-2xl lg:px-10 md:text-2xl md:px-10 md:py-6">
-                  I enjoy turning ideas into real, usable interfaces by
-                  combining strong design thinking with clean, scalable code.
-                </p>
-              </div>
-            </div>
-          </div>
+          <Profile />
         </div>
-        {/* second section  */}
-        <div className="w-[90%]  border-[6px] border-black bg-[#DECDFE] rounded-[3rem] flex flex-col gap-5 justify-center items-center pt-8 pb-10 lg:flex-row md:gap-8 lg:gap-0">
-          <div className="flex flex-col w-[95%] lg:w-[50%] items-center justify-center gap-3 md:gap-6 lg:items-start lg:px-4 lg:ml-8 lg:mt-4 lg:gap-5">
-            <span className="space font-bold text-black text-2xl md:text-4xl md:mt-2">
-              WHAT I DO 😎
-            </span>
-            {/* content */}
-            <p className="text-black text-sm py-2 text-center w-[97%] bg-[#23A095] border-2 border-black border-b-4 rounded-lg space font-bold md:text-2xl lg:w-[90%]">
-              • Design clean and bold user interfaces
-            </p>
-            <p className="text-black text-sm w-[97%] text-center py-2 bg-[#F2E961] border-2 border-black border-b-4 rounded-lg space font-bold md:text-2xl lg:w-[90%]">
-              • Create meaningful user experiences
-            </p>
-            <p className="text-black text-sm w-[97%] text-center py-2 bg-[#FD714F] border-2 border-black border-b-4 rounded-lg space font-bold md:text-2xl lg:w-[90%]">
-              • Develop web and mobile applications
-            </p>
-            <p className="text-black text-sm w-[97%] text-center py-2 bg-[#8FA9EB] border-2 border-black border-b-4 rounded-lg space font-bold md:text-2xl lg:w-[90%]">
-              • Convert designs into real products
-            </p>
-          </div>
 
-          <div className="flex flex-col w-[95%] lg:w-[50%] items-center justify-center gap-3 md:gap-6 lg:items-start lg:mt-6">
-            <span className="space font-bold text-black text-2xl md:text-4xl lg:text-4xl">
-              MY APPROACH🥇
+        {/* second section  */}
+        <Whattodo />
+
+        {/* say hello and top btn */}
+        <div className="flex flex-row  justify-evenly w-[90%] gap-4 lg:justify-between md:justify-between">
+          <div className="bg-[#A459FF] rounded-4xl w-[80%] border-[6px] border-black flex flex-col items-center justify-center gap-3 py-3 lg:flex-row lg:rounded-full lg:py-4 lg:px-4 lg:gap-0 lg:justify-evenly lg:w-[80%] md:flex-row md:justify-evenly">
+            <span className="space font-bold text-black text-center text-[1rem] leading-5 w-[80%] lg:text-4xl lg:w-auto md:w-auto md:text-xl">
+              Let’s create something great together.
             </span>
-            <p className="text-black text-sm py-5 px-4 bg-[#F2E961] border-2 border-black border-b-4 rounded-lg space font-bold md:text-2xl md:px-6 lg:text-xl lg:w-[90%]">
-              I believe good design is not just about how it looks, but how it
-              works. I focus on clarity, usability, and consistency in every
-              project.
-            </p>
-            <p className="text-black text-sm py-5 px-4 bg-[#8FA9EB] border-2 border-black border-b-4 rounded-lg space font-bold md:text-2xl md:px-6 lg:text-xl lg:w-[90%]">
-              As a developer, I enjoy building things that are not just visually
-              appealing, but also efficient, maintainable, and scalable.
-            </p>
+            <button
+              className="bg-[#FF6E6D] rounded-full px-4 py-2 border-4 border-black space font-bold text-black text-sm  lg:py-4 lg:text-2xl cursor-pointer"
+              onClick={() => {
+                router.push("/Contact");
+              }}
+            >
+              Say Hello😎!
+            </button>
           </div>
+          <button
+            className="w-16 rounded-2xl bg-[#F2E961] border-black border-4 flex flex-col items-center justify-center lg:w-28 lg:rounded-full lg:border-8 cursor-pointer"
+            onClick={() => {
+              scrollref.current?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
+            <ArrowUp color="black" strokeWidth={2} className="lg:w-8 lg:h-8" />
+            <span className="space font-bold text-black text-sm lg:text-xl">
+              top
+            </span>
+          </button>
         </div>
       </section>
     </div>

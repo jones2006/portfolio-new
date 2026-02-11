@@ -56,39 +56,47 @@ const Navbar = () => {
       </button>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="absolute top-24 left-0 w-full bg-[#DECDFE] text-black flex flex-col items-center justify-center gap-12 py-10 rounded-b-2xl border-b-4 border-b-black md:hidden">
-          <Link
-            href="/"
-            onClick={() => setMenuOpen(false)}
-            className="ibm font-bold"
-          >
-            Home
+      <div
+        className={`absolute top-24 left-0 w-full bg-[#DECDFE] text-black flex flex-col items-center justify-center gap-12 py-10 rounded-b-2xl border-b-4 border-b-black md:hidden transition-all duration-500 ease-in-out
+       ${
+       menuOpen
+      ? "opacity-100 translate-y-0"
+      : "opacity-0 -translate-y-10 pointer-events-none"
+          }`}
+      >
+        <Link
+          href="/"
+          onClick={() => setMenuOpen(false)}
+          className="ibm font-bold"
+        >
+          Home
+        </Link>
+
+        <Link
+          href="/About"
+          onClick={() => setMenuOpen(false)}
+          className="ibm font-bold"
+        >
+          About
+        </Link>
+
+        <Link
+          href="/Projects"
+          onClick={() => setMenuOpen(false)}
+          className="ibm font-bold"
+        >
+          Projects
+        </Link>
+
+        <button
+          className="bg-[#F2E961] border-b-4 border-r-2 border-black w-36 h-10 rounded-full"
+          onClick={() => setMenuOpen(false)}
+        >
+          <Link href="/Contact" className="ibm font-bold text-sm">
+            Contact
           </Link>
-          <Link
-            href="/About"
-            onClick={() => setMenuOpen(false)}
-            className="ibm font-bold "
-          >
-            About
-          </Link>
-          <Link
-            href="/Projects"
-            onClick={() => setMenuOpen(false)}
-            className="ibm font-bold "
-          >
-            Projects
-          </Link>
-          <button
-            className="bg-[#F2E961] border-b-4 border-r-2 border-black w-36 h-10 rounded-full"
-            onClick={() => setMenuOpen(false)}
-          >
-            <Link href="/Contact" className="ibm font-bold text-sm">
-              Contact
-            </Link>
-          </button>
-        </div>
-      )}
+        </button>
+      </div>
     </nav>
   );
 };
