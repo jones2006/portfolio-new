@@ -1,6 +1,7 @@
 "use client";
 import Navbar from "@/components/Navbar";
 import Profile from "@/components/profile";
+import Skills from "@/components/Skills";
 import Whattodo from "@/components/Whattodo";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -36,6 +37,7 @@ const About = () => {
 
         {/* second section  */}
         <Whattodo />
+        {/* <Skills /> */}
 
         {/* say hello and top btn */}
         <div className="flex flex-row  justify-evenly w-[90%] gap-4 lg:justify-between md:justify-between">
