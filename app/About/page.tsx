@@ -37,7 +37,7 @@ const About = () => {
 
         {/* second section  */}
         <Whattodo />
-        {/* <Skills /> */}
+        <Skills />
 
         {/* say hello and top btn */}
         <div className="flex flex-row  justify-evenly w-[90%] gap-4 lg:justify-between md:justify-between">
