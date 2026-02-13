@@ -57,7 +57,7 @@ The goal of this portfolio is to present my work in a clean, modern, and profess
 To run this project locally:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/jones2006/portfolio-new.git
+cd portfolio-new
 npm install
 npm run dev
