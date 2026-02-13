@@ -8,7 +8,7 @@ const Skills = () => {
         TOOLS & TECHNOLOGIES
       </span>
 
-      <div className="w-full flex flex-col gap-6 pt-6 lg:flex-row lg:items-center lg:justify-evenly lg:py-10">
+      <div className="w-full flex flex-col gap-6 pt-6 lg:flex-row lg:items-center lg:justify-evenly lg:py-10 md:flex-row md:items-center md:justify-evenly">
         {/* Design */}
         <div className="flex flex-col gap-6 items-center lg:gap-8">
           <span className="space font-bold text-xl text-black bg-[#8FA9EB] border-2 border-b-4 border-black w-32 h-12  flex items-center justify-center rounded-xl lg:w-40 lg:h-14">
@@ -107,7 +107,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col gap-6 pt-6 lg:flex-row lg:items-center lg:justify-evenly lg:pe-16 lg:gap-32">
+      <div className="w-full flex flex-col gap-6 pt-6 lg:flex-row lg:items-center lg:justify-evenly lg:pe-16 lg:gap-32 md:flex-row md:items-center md:justify-evenly md:pe-10 md:gap-28">
         {/* Mobile and Backend */}
         <div className="flex flex-col gap-6 items-center lg:gap-8">
           <span className="space font-bold text-xl text-black bg-[#FD714F] border-2 border-b-4 border-black w-32 h-12  flex items-center justify-center rounded-xl lg:w-40 lg:h-14">
