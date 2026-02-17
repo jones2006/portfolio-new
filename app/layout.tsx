@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   description: "Portfolio of Jones – UI/UX Designer & App Developer",
 };
 
+export const viewport = {
+  themeColor: "#F2E961",
+};
+
 const ibmPlex = IBM_Plex_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
