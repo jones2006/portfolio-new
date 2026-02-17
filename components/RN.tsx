@@ -6,12 +6,14 @@ export default function RN() {
   const [visibleCount, setVisibleCount] = useState(3);
 
   const projects = [
-    { id: 1, img: "/project-rn/loveflame.png", border: "#1E1E1E" },
-    { id: 2, img: "/project-rn/weather.png", border: "#A459FF" },
-    { id: 3, img: "/project-rn/multi.png", border: "#FFFFFF" },
-    // { id: 4, img: "/project-rn/loveflame.png", border: "#1E1E1E" },
-    // { id: 5, img: "/project-rn/weather.png", border: "#A459FF" },
-    // { id: 6, img: "/project-rn/multi.png", border: "#FFFFFF" },
+    { id: 1, img: "/project-rn/love flame app.png", border: "#1E1E1E" },
+    { id: 2, img: "/project-rn/weather app.png", border: "#A459FF" },
+    { id: 3, img: "/project-rn/multi-tools app.png", border: "#FFFFFF" },
+    { id: 4, img: "/project-rn/signup page.png", border: "#1E1E1E" },
+    { id: 5, img: "/project-rn/credit app.png", border: "#455A64" },
+    { id: 6, img: "/project-rn/Ai app.png", border: "#3269FF" },
+    { id: 7, img: "/project-rn/daily planner app.png", border: "#A459FF" },
+    { id: 8, img: "/project-rn/movie app.png", border: "#FFFFFF" },
   ];
 
   return (
