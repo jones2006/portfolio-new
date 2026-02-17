@@ -17,7 +17,7 @@ const Profile = () => {
           height={100}
           src="/icons/circle.png"
           alt="no image"
-          className="absolute right-5 bottom-0 mt-4 animate-spin [animation-duration:8s] z-0 cursor-pointer"
+          className="absolute right-5 bottom-0 mt-4 animate-spin [animation-duration:8s] z-0 cursor-pointer hover:scale-105 transition"
         />
       </div>
       {/* content */}

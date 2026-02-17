@@ -35,7 +35,7 @@ const Contact = () => {
             <a
               href="https://figma.com/@jonesj"
               target="_blank"
-              className="bg-[#1BBBFF] w-16 h-16 rounded-full border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20"
+              className="bg-[#1BBBFF] w-16 h-16 rounded-full border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20 transform hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-in-out"
             >
               <Figma color="black" className="lg:w-8 lg:h-8" />
             </a>
@@ -43,14 +43,14 @@ const Contact = () => {
             <a
               href="https://linkedin.com/in/jones-j06"
               target="_blank"
-              className="bg-[#0CCE84] w-16 h-16 rounded-full border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20"
+              className="bg-[#0CCE84] w-16 h-16 rounded-full border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20 transform hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-in-out"
             >
               <Linkedin color="black" className="lg:w-8 lg:h-8" />
             </a>
             <a
               href="https://github.com/jones2006"
               target="_blank"
-              className="bg-[#F2E961] w-16 h-16 rounded-full border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20"
+              className="bg-[#F2E961] w-16 h-16 rounded-full border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20 transform hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-in-out"
             >
               <GitHub color="black" className="lg:w-8 lg:h-8" />
             </a>
@@ -65,7 +65,7 @@ const Contact = () => {
             className="lg:w-44 lg:h-16"
           />
           <button
-            className="rounded-full w-14 h-14 bg-[#A459FF] border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20"
+            className="rounded-full w-14 h-14 bg-[#A459FF] border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20 hover:scale-105 transition"
             onClick={() => router.push("/Projects")}
           >
             <ArrowUpRight

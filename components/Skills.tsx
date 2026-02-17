@@ -11,7 +11,7 @@ const Skills = () => {
       <div className="w-full flex flex-col gap-6 pt-6 lg:flex-row lg:items-center lg:justify-evenly lg:py-10 md:flex-row md:items-center md:justify-evenly">
         {/* Design */}
         <div className="flex flex-col gap-6 items-center lg:gap-8">
-          <span className="space font-bold text-xl text-black bg-[#8FA9EB] border-2 border-b-4 border-black w-32 h-12  flex items-center justify-center rounded-xl lg:w-40 lg:h-14">
+          <span className="space font-bold text-xl text-black bg-[#8FA9EB] border-2 border-b-4 border-black w-32 h-12  flex items-center justify-center rounded-xl lg:w-40 lg:h-14 hover:scale-105 transition">
             DESIGN :
           </span>
           <div className="flex flex-row gap-5 lg:gap-10">
@@ -55,7 +55,7 @@ const Skills = () => {
         {/* Front-end  */}
 
         <div className="flex flex-col gap-6 items-center lg:gap-8">
-          <span className="space font-bold text-xl text-black bg-[#23A095] border-2 border-b-4 border-black py-2 px-6 rounded-xl lg:py-3">
+          <span className="space font-bold text-xl text-black bg-[#23A095] border-2 border-b-4 border-black py-2 px-6 rounded-xl lg:py-3 hover:scale-105 transition">
             FRONT-END :
           </span>
           <div className="flex flex-row gap-5 lg:gap-10">
@@ -110,7 +110,7 @@ const Skills = () => {
       <div className="w-full flex flex-col gap-6 pt-6 lg:flex-row lg:items-center lg:justify-evenly lg:pe-16 lg:gap-32 md:flex-row md:items-center md:justify-evenly md:pe-10 md:gap-28">
         {/* Mobile and Backend */}
         <div className="flex flex-col gap-6 items-center lg:gap-8">
-          <span className="space font-bold text-xl text-black bg-[#FD714F] border-2 border-b-4 border-black w-32 h-12  flex items-center justify-center rounded-xl lg:w-40 lg:h-14">
+          <span className="space font-bold text-xl text-black bg-[#FD714F] border-2 border-b-4 border-black w-32 h-12  flex items-center justify-center rounded-xl lg:w-40 lg:h-14 hover:scale-105 transition">
             MOBILE :
           </span>
           <div className="flex flex-row gap-5 lg:gap-9">
@@ -142,7 +142,7 @@ const Skills = () => {
         {/* Backend */}
 
         <div className="flex flex-col gap-6 items-center lg:gap-8 ">
-          <span className="space font-bold text-xl text-black bg-[#F2E961] border-2 border-b-4 border-black py-2 px-6 rounded-xl lg:py-3">
+          <span className="space font-bold text-xl text-black bg-[#F2E961] border-2 border-b-4 border-black py-2 px-6 rounded-xl lg:py-3 hover:scale-105 transition">
             BACK-END :
           </span>
           <div className="flex flex-row gap-6 lg:gap-10 ">

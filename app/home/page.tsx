@@ -25,7 +25,7 @@ const Home = () => {
               height={100}
               src="/icons/circle.png"
               alt="no image"
-              className="absolute right-5 bottom-0 mt-4 animate-spin [animation-duration:8s] z-0 cursor-pointer"
+              className="absolute right-5 bottom-0 mt-4 animate-spin [animation-duration:8s] z-0 cursor-pointer hover:scale-105 transition"
             />
           </div>
           <div className="flex flex-col gap-6 items-center justify-center lg:max-w-[620px] lg:items-start lg:pt-20 lg:justify-evenly">
@@ -44,7 +44,7 @@ const Home = () => {
               UI/UX DESIGNER & APP DEVELOPER I DESIGN BOLD INTERFACES & BUILD
               REAL PRODUCTS
             </span>
-            <button className="bg-[#F2E961] border-b-4 border-r-2 border-black w-36 h-12 rounded-2xl">
+            <button className="bg-[#F2E961] border-b-4 border-r-2 border-black w-36 h-12 rounded-2xl hover:scale-105 transition">
               <Link
                 href="/Contact"
                 className="ibm font-bold text-sm text-black"
@@ -63,7 +63,7 @@ const Home = () => {
             className="lg:w-44 lg:h-16"
           />
           <button
-            className="rounded-full w-14 h-14 bg-[#F2E961] border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20"
+            className="rounded-full w-14 h-14 bg-[#F2E961] border-4 border-black flex items-center justify-center cursor-pointer lg:w-20 lg:h-20 hover:scale-105 transition"
             onClick={() => router.push("/About")}
           >
             <ArrowUpRight

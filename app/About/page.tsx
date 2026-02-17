@@ -25,7 +25,7 @@ const About = () => {
             height={130}
             src="/icons/about.png"
             alt="no image"
-            className="pt-6 lg:w-64 lg:h-28 lg:mt-3 md:w-52 md:h-24"
+            className="pt-6 lg:w-64 lg:h-28 lg:mt-3 md:w-52 md:h-24 "
           />
           <p className="space font-medium text-black text-base text-center px-2 py-4 lg:text-3xl lg:pt-6 md:text-2xl">
             “<span className="text-[#FD714F]">DESIGNER</span> BY THINKING,
@@ -46,7 +46,7 @@ const About = () => {
               Let’s create something great together.
             </span>
             <button
-              className="bg-[#FF6E6D] rounded-full px-4 py-2 border-4 border-black space font-bold text-black text-sm  lg:py-4 lg:text-2xl cursor-pointer"
+              className="bg-[#FF6E6D] rounded-full px-4 py-2 border-4 border-black space font-bold text-black text-sm  lg:py-4 lg:text-2xl cursor-pointer hover:scale-105 transition"
               onClick={() => {
                 router.push("/Contact");
               }}
@@ -55,7 +55,7 @@ const About = () => {
             </button>
           </div>
           <button
-            className="w-16 rounded-2xl bg-[#F2E961] border-black border-4 flex flex-col items-center justify-center lg:w-28 lg:rounded-full lg:border-8 cursor-pointer"
+            className="w-16 rounded-2xl bg-[#F2E961] border-black border-4 flex flex-col items-center justify-center lg:w-28 lg:rounded-full lg:border-8 cursor-pointer hover:scale-105 transition"
             onClick={() => {
               scrollref.current?.scrollIntoView({
                 behavior: "smooth",
